@@ -31,9 +31,9 @@ int main(int argc, char *argv[])
     {
         text->push_back(std::move(line));
     }
-    mtfind::MTFind parallel(text, argv[2]);
+    mtfind::MTFind parallel(text, pattern);
     parallel.Search();
 
     std::cout << parallel;
-
+    return 0;
 }
